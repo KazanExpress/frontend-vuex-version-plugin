@@ -1,0 +1,1 @@
+# frontend-vuex-version-plugin
