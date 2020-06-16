@@ -1,6 +1,6 @@
 # @kazanexpress/vuex-version-plugin
 
-> Simple Vuex plugin to maintain actual version of the store
+> Simple Vuex plugin to maintain actual version of the store. It clears localStorage if versions are not equal.
 
 ## Installation
 
