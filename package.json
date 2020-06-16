@@ -1,0 +1,19 @@
+{
+  "name": "@kazanexpress/vuex-version-plugin",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KazanExpress/frontend-vuex-version-plugin.git"
+  },
+  "author": "Marketplace Technologies",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/KazanExpress/frontend-vuex-version-plugin/issues"
+  },
+  "homepage": "https://github.com/KazanExpress/frontend-vuex-version-plugin#readme"
+}
