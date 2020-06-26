@@ -5,7 +5,7 @@
 ## Installation
 
 ```bash
-npm i -D https://github.com/KazanExpress/frontend-vuex-version-plugin.git
+npm i https://github.com/KazanExpress/frontend-vuex-version-plugin.git
 ```
 
 ## Usage
