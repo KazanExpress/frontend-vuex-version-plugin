@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/KazanExpress/frontend-vuex-version-plugin/issues"
   },
-  "homepage": "https://github.com/KazanExpress/frontend-vuex-version-plugin#readme"
+  "homepage": "https://github.com/KazanExpress/frontend-vuex-version-plugin#readme",
+  "dependencies": {
+    "semver": "^7.3.2"
+  }
 }
