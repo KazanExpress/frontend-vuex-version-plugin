@@ -1,4 +1,4 @@
-import semverDiff from 'semver/functions/diff';
+import { diff as semverDiff } from 'semver';
 
 export const versionPlugin = ({ version, name, action, diff, predicate = (oldVer, newVer) => oldVer !== newVer } = {}) => {
   return !process.server ? (store) => {
