@@ -1,10 +1,10 @@
-import { diff as semverDiff } from 'semver';
+import { diff as semverDiff, coerce } from 'semver';
 
 export const versionPlugin = ({ version, name, action, diff, predicate = (oldVer, newVer) => oldVer !== newVer } = {}) => {
   return !process.server ? (store) => {
-    const currentVersion = version || 1;
+    const currentVersion = coerce(version || 1);
     const itemKey = name || 'application-store-version';
-    const localVersion = localStorage.getItem(itemKey) || 0;
+    const localVersion = coerce(localStorage.getItem(itemKey) || 0);
 
     function cleanTheMess() {
       localStorage.clear();
