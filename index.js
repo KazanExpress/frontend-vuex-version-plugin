@@ -15,11 +15,22 @@ export const versionPlugin = ({ version, name, action, diff, predicate = (oldVer
       }
     }
 
-    if (
-      !localVersion ||
-      (!diff && typeof predicate === 'function' && predicate(localVersion, currentVersion)) ||
-      (diff && semverDiff(localVersion, currentVersion) === diff)
-    ) {
+    function hasDiff() {
+      if (diff) {
+        const diffList = Array.isArray(diff) ? diff : [diff];
+        const currentDiff = semverDiff(localVersion, currentVersion);
+
+        if (diffList.includes(currentDiff)) {
+          return true;
+        }
+
+        return false;
+      } else {
+        return typeof predicate === 'function' && predicate(localVersion, currentVersion);
+      }
+    }
+
+    if (!localVersion || hasDiff()) {
       cleanTheMess();
     }
   } : () => {};
