@@ -17,6 +17,6 @@
   },
   "homepage": "https://github.com/KazanExpress/frontend-vuex-version-plugin#readme",
   "dependencies": {
-    "semver": "^7.3.2"
+    "semver": "^7.3.7"
   }
 }
